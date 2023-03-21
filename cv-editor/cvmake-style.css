@@ -212,6 +212,7 @@
     display: list-item;
     border-radius: 9px;
     list-style: none;
+    margin-bottom: 10px;
 }
 .data{
     font-size: large;

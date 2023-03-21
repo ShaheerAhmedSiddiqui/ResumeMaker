@@ -223,5 +223,5 @@ function printCv() {
     document.getElementById("btn").style.display = "none";
     window.print();
     document.getElementById("btn").style.display = "block";
-    document.getElementById("btn").style.margin = "auto";
+    document.getElementById("btn").style.margin = " 0 auto";
 }
