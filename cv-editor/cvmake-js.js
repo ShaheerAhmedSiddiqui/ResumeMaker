@@ -87,7 +87,8 @@ function display() {
     experience();
     refrence();
     imgUploade()
-    document.getElementById("btn").style.display = "block";
+    var btn = document.getElementById("btn");
+    btn.style.display = "block";
 }
 
 function imgUploade() {

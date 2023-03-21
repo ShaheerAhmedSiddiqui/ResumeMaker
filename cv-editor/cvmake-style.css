@@ -549,7 +549,7 @@ table td{
 .button {
     text-align: center;
     margin: 2rem 0rem;
-  
+    
 }
 #btn {
     padding: 6px 13px;
@@ -560,4 +560,5 @@ table td{
     border-radius: 10px;
     border: none;
     outline: none;
+    display: none;
 }
