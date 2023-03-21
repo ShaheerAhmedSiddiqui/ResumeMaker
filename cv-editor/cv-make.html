@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cvmake-style.css">
+    <title>Resume-Editor</title>
+</head>
+
+<body>
+
+    <div id="r-editor" class="resume-editor">
+        <div class="header">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Resumes</a></li>
+                <li><a href="../cv-editor/cv-make.html">Make Resume</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="represent">
+            <h1>Welcome TO Our Resume Maker Page</h1>
+        </div>
+        <div id="detail">
+            <div class="personalDetail">
+                <div class="intro-detail">
+                    <h1>Introduction Your Self</h1>
+                    <input type="text" placeholder="Name" id="yourName">
+                    <input type="text" placeholder="Work" id="work">
+                    <textarea name="" id="objective" class="textarea1" placeholder="Objective" cols="30"
+                        rows="5"></textarea>
+                    <form action="/action_page.php" class="form">
+                        Browse Your Profile Image<input type="file" id="myFile" name="filename" class="">
+                    </form>
+                    <button id="add-lang-btn" onclick="imgUpload()">Upload Image</button>
+                </div>
+                <div class="contact">
+                    <h1>For Contact</h1>
+                    <input type="text" placeholder="Email" id="contEmailInp">
+                    <input type="text" placeholder="Phone" id="contPhoneInp">
+                    <textarea name="" class="textarea1" id="contAddInp" placeholder="Address" cols="30"
+                        rows="5"></textarea>
+                </div>
+                <div class="education-detail">
+                    <h1>Education</h1>
+                    <div class="parts">
+                        <div class="edu-1">
+                            <h2>Matriculation</h2>
+                            <input type="text" placeholder="passing year" id="mat-year">
+                            <input type="text" placeholder="Enter Your education" id="mat-edu">
+                            <input type="text" placeholder="Enter Your University/College" id="mat-sc">
+                        </div>
+                        <div class="edu-2">
+                            <h2>Intermidiate</h2>
+                            <input type="text" placeholder="passing year" id="int-year">
+                            <input type="text" placeholder="Enter Your education" id="int-edu">
+                            <input type="text" placeholder="Enter Your University/College" id="int-sc">
+                        </div>
+                    </div>
+                </div>
+                <div class="expertise">
+                    <h1>Add Your Expertise</h1>
+                    <input type="text" placeholder="Add Expertise" id="expr_inp">
+                    <button id="add-expr" onclick="append()">Add</button>
+                    <table id="table">
+
+                    </table>
+                </div>
+                <div class="languages">
+                    <h1>Add Languages</h1>
+                    <input type="text" placeholder="Add Here" id="add-lang">
+                    <button id="add-lang-btn" onclick="add()">Add</button>
+                    <table id="mytable">
+
+                    </table>
+                </div>
+            </div>
+            <div class="working">
+                <div class="experiences">
+                    <div class="expr-1">
+                        <h1>Experience 1</h1>
+                        <input type="text" class="expr-inp" placeholder="2021-2022" id="expr1-year">
+                        <input type="text" class="expr-inp" placeholder="Comapny Name" id="expr1-com">
+                        <input type="text" class="expr-inp" placeholder="Job Title" id="expr1-job">
+                        <textarea name="" class="textarea1"  placeholder="About Job/Description" id="descript1-text" cols="30"
+                            rows="4"></textarea>
+                    </div>
+                    <div class="expr-1">
+                        <h1>Experience 2</h1>
+                        <input type="text" placeholder="2021-2022" id="expr2-year">
+                        <input type="text" placeholder="Comapny Name" id="expr2-com">
+                        <input type="text" placeholder="Job Title" id="expr2-job">
+                        <textarea name="" class="textarea1"  placeholder="About Job/Description" id="descript2-text" cols="30"
+                            rows="4"></textarea>
+
+                    </div>
+                    <div class="expr-1">
+                        <h1>Experience 3</h1>
+                        <input type="text" placeholder="2021-2022" id="expr3-year">
+                        <input type="text" placeholder="Comapny Name" id="expr3-com">
+                        <input type="text" placeholder="Job Title" id="expr3-job">
+                        <textarea name="" class="textarea1" placeholder="About Job/Description" id="descript3-text" cols="30"
+                            rows="4"></textarea>
+
+                    </div>
+                </div>
+                <div class="refrence">
+                    <h1>Reference</h1>
+                    <div class="ref-box">
+                        <div class="ref-1">
+                            <input type="text" placeholder="Name Surname" id="ref1-name">
+                            <input type="text" placeholder="Job Position, Company Name" id="ref1-com">
+                            <input type="text" placeholder="Email" id="ref1-email">
+                            <input type="text" placeholder="Phone Number" id="ref1-no">
+
+                        </div>
+                        <div class="ref-1">
+                            <input type="text" placeholder="Name Surname" id="ref2-name">
+                            <input type="text" placeholder="Job Position, Company Name" id="ref2-com">
+                            <input type="text" placeholder="Email" id="ref2-email">
+                            <input type="text" placeholder="Phone Number" id="ref2-no">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="getResume">
+            <h1>Now You Can Get Your Resume Here</h1>
+            <button id="get_cv_here" onclick="display()">Get Resume</button>
+        </div>
+    </div>
+
+    <div id="getResume">
+        <div class="resume-portion">
+            <div class="detail">
+                <div class="imageUpload">
+                    <img src="" alt="" id="profileImg">
+                </div>
+                <div class="contact-cv">
+                    <h1>Contact</h1>
+                    <h4>Email:</h4>
+                    <p id="contEmail"></p>
+                    <h4>Phone No:</h4>
+                    <p id="contNo"></p>
+                    <h4>Address:</h4>
+                    <p id="contAdd"></p>
+                </div>
+                <div class="skill">
+                    <h1>Education</h1>
+                    <div class="edu-1">
+                        <p class="par-1" id="year1-p"></p>
+                        <h4 id="year1-edu"></h4>
+                        <p class="par-2" id="year1-col"></p>
+                    </div>
+                    <div class="edu-1">
+                        <p class="par-1" id="year2-p"></p>
+                        <h4 id="year2-edu"></h4>
+                        <p class="par-2" id="year2-col"></p>
+                    </div>
+                </div>
+
+                <div class="expertise-cv">
+                    <h1>Expertise</h1>
+                    <table id="expertiseTable">
+                        <!-- <tr>
+                            <td>UI/UX</td>
+                        </tr>
+                        <tr>
+                            <td>Visual Design</td>
+                        </tr>
+                        <tr>
+                            <td>Story Abroad</td>
+                        </tr> -->
+                    </table>
+                </div>
+                <div class="languages-cv">
+                    <h1>Languages</h1>
+                    <table id="languagestable">
+                        <!-- <tr>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <td>Urdu</td>
+                        </tr> -->
+                    </table>
+                </div>
+            </div>
+            <div class="education">
+                <div class="intro">
+                    <h1 id="namePerson"></h1>
+                    <h3 id="workPerson"></h3>
+                    <p id="description"></p>
+                </div>
+                <div class="experience">
+                    <h1>Experience</h1>
+                    <div class="expr-text">
+                        <p class="txt-1" id="expText1-year"></p>
+                        <p class="txt-2" id="expText1-cpName"></p>
+                        <h3 class="txt-3" id="exptext1-jt"></h3>
+                        <p class="txt-4" id="expText1-jd"></p>
+                    </div>
+                    <div class="expr-text">
+                        <p class="txt-1" id="expText2-year"></p>
+                        <p class="txt-2" id="expText2-cpName"></p>
+                        <h3 class="txt-3" id="exptext2-jt"></h3>
+                        <p class="txt-4" id="expText2-jd"></p>
+                    </div>
+                    <div class="expr-text">
+                        <p class="txt-1" id="expText3-year"></p>
+                        <p class="txt-2" id="expText3-cpName"></p>
+                        <h3 class="txt-3" id="exptext3-jt"></h3>
+                        <p class="txt-4" id="expText3-jd"></p>
+                    </div>
+                </div>
+                <div class="reference">
+                    <h1 class="ref_h1">Reference</h1>
+                    <div class="nameSurnames">
+                        <div class="ns_1">
+                            <h2 id="ref1-Sname"></h2>
+                            <p class="job-p" id="ref1-jp"></p>
+                            <p class="blue">Phone:<span id="ref1-phone"></span></p>
+                            <p class="blue">Email:<span  id="ref1-mail"></span></p>
+                        </div>
+                        <div class="ns_1">
+                            <h2 id="ref2-Sname"></h2>
+                            <p class="job-p" id="ref2-jp"></p>
+                            <p class="blue">Phone:<span id="ref2-phone"></span></p>
+                            <p class="blue">Email:<span id="ref2-mail"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="button">
+        <button id="btn" onclick="printCv()">printCv</button>
+    </div>
+</body>
+<script src="./cvmake-js.js"></script>
+<script src="./jquery.js"></script>
+
+</html>
