@@ -9,10 +9,18 @@
 }
 .header {
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 0.25rem 3rem;
     background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
+.logo{
+    line-height: 0;
+}
+.logo img{
+    width: 100%;
+}
 .header ul {
     display: flex;
     justify-content: center;

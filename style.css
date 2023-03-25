@@ -10,12 +10,21 @@
     background-size: cover;
 }
 .header{
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 0.25rem 0rem;
     position: fixed;
     width: 100%;
     z-index: 10000;
     background-color: #00000029;
+    align-items: center;
+}
+.logo{
+    line-height: 0;
+}
+.logo img{
+    width: 100%;
 }
 .header ul{
     display: flex;
