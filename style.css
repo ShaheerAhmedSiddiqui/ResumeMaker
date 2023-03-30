@@ -227,6 +227,10 @@
 .toggle img{
     width: 100%;
 }
+.menu{
+    flex-basis: 100%;
+    flex-grow: 1;
+}
 @media only screen and  (max-width: 768px){
     .header ul li {
         padding: 0rem 1rem;
@@ -240,6 +244,7 @@
     }
     .header-text p {
         font-size: 13px;
+        padding: 0rem 5rem;
     }
     .makeCv-text {
         padding: 13px 4px;
@@ -259,4 +264,278 @@
     .quick-box {
         padding: 4rem 0rem 3rem 3rem;
     }
+    #menuItems{
+        display: none;
+    }
+    .menu{
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    .toggle{
+        display: block;
+    }
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header ul {
+        flex-direction: column;
+    }
+    .header ul li a{
+        font-size: 12px;
+    }
 } 
+@media only screen and  (min-width: 425px){
+    .header-text {
+        padding: 4rem 0rem;
+    }
+    .header-text h1 {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+    .header-text p {
+        font-size: 12px;
+        padding: 0rem 1rem;
+    }    
+    .makeCv{
+      margin: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .makeCv-text {
+        padding: 4px;
+    }
+    .makeCv-text h1 {
+        font-size: 8px;
+        margin-bottom: 3px;
+        padding: 0px 0px 0px 10px;
+    }
+    .makeCv-text p {
+        font-size: 7px;
+        margin-bottom: 2px;
+    }
+    .makeCv-text a {
+        padding: 3px 3px;
+        margin-left: 10px;
+        font-size: 5px;
+    }
+    .footer-box{
+        flex-wrap: wrap;
+    }
+    .quick-id {
+        width: 100%;
+    }
+    .quick-box {
+        padding: 1rem;
+    }
+    .quick-box h1{
+        width: 110px;
+        line-height: 32px;
+        font-size: 25px;
+    }
+    .quick-box p {
+        margin-bottom: 7px;
+        font-size: 12px;
+    }
+    .quick-box p span {
+        width: 64px;
+        font-size: 14px;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact-box {
+        padding: 1rem;
+        display: grid;
+    }
+    .contact-box h1{
+        width: 138px;
+        line-height: 23px;
+        font-size: 25px;
+    }
+    .contact-inp-1 {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .last-footer {
+        padding: 0.25rem 0rem;
+        margin: 1rem 1rem;
+     }
+     .last-footer p {
+        font-size: 9px;
+    }
+    .icons i {
+        padding: 0rem 0.25rem;
+        font-size: 18px;
+    }
+}
+@media only screen and  (min-width: 375px){
+    .header-text {
+        padding: 4rem 0rem;
+    }
+    .header-text h1 {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+    .header-text p {
+        font-size: 12px;
+        padding: 0rem 1rem;
+    }    
+    .makeCv{
+      margin: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .makeCv-text {
+        padding: 4px;
+    }
+    .makeCv-text h1 {
+        font-size: 8px;
+        margin-bottom: 3px;
+        padding: 0px 0px 0px 10px;
+    }
+    .makeCv-text p {
+        font-size: 7px;
+        margin-bottom: 2px;
+    }
+    .makeCv-text a {
+        padding: 3px 3px;
+        margin-left: 10px;
+        font-size: 5px;
+    }
+    .footer-box{
+        flex-wrap: wrap;
+    }
+    .quick-id {
+        width: 100%;
+    }
+    .quick-box {
+        padding: 1rem;
+    }
+    .quick-box h1{
+        width: 110px;
+        line-height: 32px;
+        font-size: 25px;
+    }
+    .quick-box p {
+        margin-bottom: 7px;
+        font-size: 12px;
+    }
+    .quick-box p span {
+        width: 64px;
+        font-size: 14px;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact-box {
+        padding: 1rem;
+        display: grid;
+    }
+    .contact-box h1{
+        width: 138px;
+        line-height: 23px;
+        font-size: 25px;
+    }
+    .contact-inp-1 {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .last-footer {
+        padding: 0.25rem 0rem;
+        margin: 1rem 1rem;
+     }
+     .last-footer p {
+        font-size: 9px;
+    }
+    .icons i {
+        padding: 0rem 0.25rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and  (min-width: 320px){
+    .header-text {
+        padding: 4rem 0rem;
+    }
+    .header-text h1 {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+    .header-text p {
+        font-size: 12px;
+        padding: 0rem 1rem;
+    }    
+    .makeCv{
+      margin: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .makeCv-text {
+        padding: 4px;
+    }
+    .makeCv-text h1 {
+        font-size: 8px;
+        margin-bottom: 3px;
+        padding: 0px 0px 0px 10px;
+    }
+    .makeCv-text p {
+        font-size: 7px;
+        margin-bottom: 2px;
+    }
+    .makeCv-text a {
+        padding: 3px 3px;
+        margin-left: 10px;
+        font-size: 5px;
+    }
+    .footer-box{
+        flex-wrap: wrap;
+    }
+    .quick-id {
+        width: 100%;
+    }
+    .quick-box {
+        padding: 1rem;
+    }
+    .quick-box h1{
+        width: 110px;
+        line-height: 32px;
+        font-size: 25px;
+    }
+    .quick-box p {
+        margin-bottom: 7px;
+        font-size: 12px;
+    }
+    .quick-box p span {
+        width: 64px;
+        font-size: 14px;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact-box {
+        padding: 1rem;
+        display: grid;
+    }
+    .contact-box h1{
+        width: 138px;
+        line-height: 23px;
+        font-size: 25px;
+    }
+    .contact-inp-1 {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .last-footer {
+        padding: 0.25rem 0rem;
+        margin: 1rem 1rem;
+     }
+     .last-footer p {
+        font-size: 9px;
+    }
+    .icons i {
+        padding: 0rem 0.25rem;
+        font-size: 18px;
+    }
+}
