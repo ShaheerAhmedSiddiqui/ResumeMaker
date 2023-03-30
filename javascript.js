@@ -1,5 +1,8 @@
 function toggle(params) {
-    
-    var menuItems = document.getElementById("menuItems").style.display = "none"; 
-    var menuItems = document.getElementById("menuItems").style.display = "block";
+    var menuItems = document.getElementById("menuItems");
+    if (menuItems.style.display === "none") {
+        menuItems.style.display = "block";
+      } else {
+        menuItems.style.display = "none";
+      }
 }
