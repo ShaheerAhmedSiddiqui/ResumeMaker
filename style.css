@@ -227,14 +227,12 @@
 .toggle img{
     width: 100%;
 }
-.menu{
-    flex-basis: 100%;
-    flex-grow: 1;
-}
+
 @media only screen and  (max-width: 768px){
     .header ul li {
         padding: 0rem 1rem;
         list-style: none;
+        margin-bottom: 5px;
     }
     .header-text {
         padding: 8rem 3rem;
@@ -283,9 +281,18 @@
         flex-direction: column;
     }
     .header ul li a{
-        font-size: 12px;
+        font-size: 15px;
     }
-} 
+    .contact-inp-1{
+        padding: 5px 10px 0px 0px;
+    }
+    .contact-inp-2 {
+        padding: 5px 10px 60px 0px;
+    } 
+    .contact-box a{
+        margin:  auto;
+    }
+}
 @media only screen and  (max-width: 425px){
     .header-text {
         padding: 4rem 0rem;
@@ -319,6 +326,10 @@
         padding: 3px 3px;
         margin-left: 10px;
         font-size: 5px;
+    }
+    .menu{
+        flex-basis: 100%;
+        flex-grow: 1;
     }
     .footer-box{
         flex-wrap: wrap;
@@ -406,6 +417,10 @@
         padding: 3px 3px;
         margin-left: 1px;
         font-size: 5px;
+    }
+    .menu{
+        flex-basis: 100%;
+        flex-grow: 1;
     }
     .footer-box{
         flex-wrap: wrap;
@@ -495,6 +510,10 @@
         padding: 3px 3px;
         margin-left: 1px;
         font-size: 5px;
+    }
+    .menu{
+        flex-basis: 100%;
+        flex-grow: 1;
     }
     .footer-box{
         flex-wrap: wrap;

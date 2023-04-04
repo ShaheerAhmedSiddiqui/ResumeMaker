@@ -1,18 +1,12 @@
-var data = {
-    intro: {
-        name: '',
-        work: '',
-        objective: '',
-        profile_image: '',
-    },
-    intro: {
-        name: '',
-        work: '',
-        objective: '',
-        profile_image: '',
-    },
-};
-
+//toggle//
+function toggle() {
+    var menu = document.getElementById("menuItems");
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none"
+    }
+}
 
 var table = document.getElementById("table");
 
@@ -225,3 +219,4 @@ function printCv() {
     document.getElementById("btn").style.display = "block";
     document.getElementById("btn").style.margin = " 0 auto";
 }
+
