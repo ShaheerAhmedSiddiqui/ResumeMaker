@@ -79,6 +79,7 @@ function display() {
     btn.style.display = "block";
 
     introUpdate();
+    contact() 
     education();
     experience();
     refrence();
@@ -113,6 +114,17 @@ function introUpdate() {
 
 
 }
+function contact() {
+    var contEmailInp = document.getElementById("contEmailInp").value;
+    document.getElementById("contEmail").innerHTML = contEmailInp;
+
+    var contPhoneInp = document.getElementById("contPhoneInp").value;
+    document.getElementById("contNo").innerHTML = contPhoneInp;
+
+    var contAddInp = document.getElementById("contAddInp").value;
+    document.getElementById("contAdd").innerHTML = contAddInp;
+}
+
 function education() {
     var mat_year = document.getElementById("mat-year").value;
     document.getElementById("year1-p").innerHTML = mat_year;
