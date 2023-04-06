@@ -650,7 +650,7 @@ table td{
         }
     }
 
-@media only screen and  (min-width: 280px){
+@media only screen and  (max-width: 425px){
         .header ul li {
             padding: 0rem 1rem;
             list-style: none;
