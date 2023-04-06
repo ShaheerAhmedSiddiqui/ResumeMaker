@@ -412,6 +412,7 @@
     .makeCv-text p {
         font-size: 6px;
         margin-bottom: 0px;
+        padding: 0px;
     }
     .makeCv-text a {
         padding: 3px 3px;

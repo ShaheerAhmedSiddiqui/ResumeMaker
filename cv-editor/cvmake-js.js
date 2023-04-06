@@ -18,7 +18,6 @@ function append() {
         console.log(localStorage.getItem("keyExprt"));
         $('#table').append('<tr class="table-tr"><td class="data">' + expr_inp + '</td></tr>');
         $('#expertiseTable').append('<tr class="table-tr"><td>' + expr_inp + '</td></tr>');
-        var expr_inp = document.getElementById("expr_inp").value = "";
     } else {
         alert("Please Fill Information")
     }
@@ -30,7 +29,6 @@ function add() {
     if (add_lang !== "") {
         $('#mytable').append('<tr class="table-tr"><td class="data">' + add_lang + '</td></tr>');
         $('#languagestable').append('<tr class="table-tr"><td>' + add_lang + '</td></tr>');
-        var add_lang = document.getElementById("add-lang").value = "";
     } else {
         alert("Please Fill Information")
     }
@@ -74,15 +72,18 @@ function display() {
     none.style.display = "none";
     block.style.display = "block"
 
+    var edit = document.getElementById("goEdit");
+    edit.style.display = "block";
 
+    var btn = document.getElementById("btn");
+    btn.style.display = "block";
 
     introUpdate();
     education();
     experience();
     refrence();
     imgUploade()
-    var btn = document.getElementById("btn");
-    btn.style.display = "block";
+    
 }
 
 function imgUploade() {
@@ -215,8 +216,27 @@ function refrence() {
 function printCv() {
 
     document.getElementById("btn").style.display = "none";
+    var edit = document.getElementById("goEdit");
+    edit.style.display = "none";
     window.print();
     document.getElementById("btn").style.display = "block";
-    document.getElementById("btn").style.margin = " 0 auto";
+    document.getElementById("btn").style.margin = " 0rem 1rem";
+    var edit = document.getElementById("goEdit");
+    edit.style.display = "block";
+
+    
 }
 
+function onEdit(){
+    var none = document.getElementById("r-editor");
+    var block = document.getElementById("getResume");
+
+    none.style.display = "block";
+    block.style.display = "none";
+
+    var edit = document.getElementById("goEdit");
+    edit.style.display = "none";
+
+    var btn = document.getElementById("btn").style.display = "none";
+    console.log("btn");
+}
