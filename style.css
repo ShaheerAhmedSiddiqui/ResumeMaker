@@ -154,25 +154,15 @@
     color: white;
 }
 .contact-box{
-    padding: 4rem 0rem 3rem 1rem;
+    padding: 4rem 2rem 3rem 2rem;
     display: grid;
-}
-.contact-inp-1{
-    width: 152px;
-    background: none;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #757575;
-    color: #757575;
-    padding: 5px 185px 0px 0px;
-    margin-bottom: 5px;
 }
 .contact-box a{
     text-decoration: none;
     color: #757575;
     font-size: large;
     font-weight: bold;
-    margin: 0rem 9rem;
+    margin: auto;
 }
 .contact-box h1{
     color: white;
@@ -183,6 +173,10 @@
     font-size: 35px;
     font-family: monospace;
 }
+.float-inp{
+    display: flex;
+    justify-content: space-between;
+}
 .float-inp input{
     background: none;
     color: #757575;
@@ -190,17 +184,27 @@
     border-bottom: 1px solid #757575;
     padding: 0px;
     margin-bottom: 10px;
-    margin-right: 10px;
     outline: none;
+    width: 48%;
 }
-.contact-inp-2{
-    width: 152px;
+.contact-inp-1{
+    padding: 5px 0px 0px 0px;
+    width: 100%;
     background: none;
     outline: none;
     border: none;
     border-bottom: 1px solid #757575;
     color: #757575;
-    padding: 5px 185px 60px 0px;
+    margin-bottom: 5px;
+}
+.contact-inp-2{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #757575;
+    color: #757575;
+    padding: 5px 10px 60px 0px;
     margin-bottom: 5px;
 }
 .last-footer{
@@ -235,20 +239,23 @@
         margin-bottom: 5px;
     }
     .header-text {
-        padding: 8rem 3rem;
+        padding: 5.5rem 0rem;
     }
     .header-text h1 {
         font-size: 23px;
     }
     .header-text p {
         font-size: 13px;
-        padding: 0rem 5rem;
+        padding: 0rem 2rem;
+    }
+    .makeCv{
+        width: 80% !important;
     }
     .makeCv-text {
-        padding: 13px 4px;
+        padding: 8px 4px;
     }
     .makeCv-text h1 {
-        font-size: 15px;
+        font-size: 13px;
     }
     .makeCv-text p {
         font-size: 12px;
@@ -260,7 +267,14 @@
         font-size: 12px;
     }
     .quick-box {
-        padding: 4rem 0rem 3rem 3rem;
+        padding: 4rem 1rem 3rem 1rem;
+    }
+    .quick-box p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .quick-box p span{
+        font-size: 13px;
     }
     #menuItems{
         display: none;
@@ -283,14 +297,30 @@
     .header ul li a{
         font-size: 15px;
     }
+    .contact-box{
+        padding: 4rem 1rem 2rem 1rem;
+    }
     .contact-inp-1{
-        padding: 5px 10px 0px 0px;
+        padding: 5px 0px 0px 0px;
+        width: 100%;
     }
     .contact-inp-2 {
-        padding: 5px 10px 60px 0px;
+        padding: 5px 0px 60px 0px;
     } 
     .contact-box a{
         margin:  auto;
+    }
+    .footer-box{
+        flex-wrap: wrap;
+    }
+    .quick-id{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+    }
+    .last-footer{
+        margin: 1rem;
     }
 }
 @media only screen and  (max-width: 425px){
@@ -309,18 +339,19 @@
       margin: auto;
       margin-top: 1rem;
       margin-bottom: 1rem;
+      width: 80%;
     }
     .makeCv-text {
-        padding: 4px;
+        padding: 8px 4px;
     }
     .makeCv-text h1 {
-        font-size: 8px;
-        margin-bottom: 3px;
+        font-size: 11px;
+        margin-bottom: 5px;
         padding: 0px 0px 0px 10px;
     }
     .makeCv-text p {
-        font-size: 7px;
-        margin-bottom: 2px;
+        font-size: 10px;
+        margin-bottom: 6px;
     }
     .makeCv-text a {
         padding: 3px 3px;
@@ -493,19 +524,19 @@
       margin: auto;
       margin-top: 1rem;
       margin-bottom: 1rem;
+      width: 80%;
     }
     .makeCv-text {
-        padding: 2px 4px;
+        padding: 8px 4px;
     }
     .makeCv-text h1 {
-        font-size: 6px;
-        margin-bottom: 3px;
+        font-size: 11px;
+        margin-bottom: 4px;
         padding: 0px 0px 0px 1px;
     }
     .makeCv-text p {
-        font-size: 6px;
-        margin-bottom: 0px;
-        padding: 0px 0px 0px 1px;
+        font-size: 10px;
+        margin-bottom: 6px;
     }
     .makeCv-text a {
         padding: 3px 3px;

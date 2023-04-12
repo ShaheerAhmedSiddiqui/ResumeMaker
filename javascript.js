@@ -5,4 +5,7 @@ function toggle(params) {
       } else {
         menuItems.style.display = "none";
       }
+
+    var header = document.getElementsByClassName("header");
+    header.style.background  = "black";
 }

@@ -592,7 +592,7 @@ table td{
     border: none;
     outline: none;
 }
-@media only screen and  (max-width: 768px){
+@media only screen and (max-width: 768px){
         .header ul li {
             padding: 0rem 1rem;
             list-style: none;
@@ -648,9 +648,26 @@ table td{
         .getResume h1{
             font-size: 25px;
         }
-    }
-
+        .personalDetail{
+            padding: 0rem 1rem;
+        }
+        .working{
+            padding: 0rem 1rem;
+        }
+        .experience{
+            padding: 0rem 1rem;
+        }
+        .refrence{
+            padding: 0rem 1rem;
+        }
+        
+}
 @media only screen and  (max-width: 425px){
+    .intro-detail {
+        padding: 0rem 1rem !important;
+    }
+}
+@media only screen and  (max-width: 320px){
         .header ul li {
             padding: 0rem 1rem;
             list-style: none;
@@ -687,6 +704,7 @@ table td{
              letter-spacing: 1px;
         }
         .personalDetail {
+            padding: 0rem;
             width: 100%;
         }
         .working{
@@ -749,4 +767,4 @@ table td{
             font-size: 10px;
         }
     }
-
+ 
