@@ -256,6 +256,9 @@
         padding: 0px 10px;
         margin-bottom: 20px;
     }
+    .quick-box {
+        padding: 4rem 0rem 3rem 3rem;
+    }
 }
 @media only screen and  (max-width: 768px){
     .header ul li {
