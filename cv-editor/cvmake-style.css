@@ -592,6 +592,75 @@ table td{
     border: none;
     outline: none;
 }
+@media only screen and (max-width: 992px){
+    .header ul li {
+        padding: 0rem 1rem;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    #menuItems{
+        display: none;
+    }
+    .menu{
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    .toggle{
+        display: block;
+    }
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header ul {
+        flex-direction: column;
+    }
+    .header ul li a{
+        font-size: 15px;
+
+    }
+    .represent {
+        padding: 0.25rem 0rem;
+    }
+    .represent h1{
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+    .personalDetail {
+        width: 100%;
+    }
+    .working{
+        width: 100%;
+    }
+    .parts {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .parts input{
+        width: 100%;
+    }
+    .getResume {
+        margin: 2rem 3rem;
+        padding: 1rem;
+    }
+    .getResume h1{
+        font-size: 25px;
+    }
+    .personalDetail{
+        padding: 0rem 1rem;
+    }
+    .working{
+        padding: 0rem 1rem;
+    }
+    .experience{
+        padding: 0rem 1rem;
+    }
+    .refrence{
+        padding: 0rem 1rem;
+    }
+}
 @media only screen and (max-width: 768px){
         .header ul li {
             padding: 0rem 1rem;
