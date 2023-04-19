@@ -208,11 +208,11 @@
     margin-bottom: 5px;
 }
 .last-footer{
-    padding: 1rem 0rem;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 1rem 5rem;
+    margin: 1rem 8.5rem;
     border: 1px solid;
     border-radius: 17px;
 }
